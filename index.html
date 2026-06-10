@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clickSHOP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+
+    <header>
+        <div>
+            <p class="off-section">30% off for no one..!</p>
+        </div>
+        <nav class="navbar">
+            <div class="left">
+                <img class="logo" src="https://static.vecteezy.com/system/resources/previews/026/419/527/large_2x/cart-logo-ecommerce-free-png.png" alt="logo">
+                <h1 class="icon">clickSHOP</h1>
+            </div>
+            <ul class="right">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <span class="cart-icon-wrap">
+                        <a href="#" class="cart-icon-link">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                        <span id="cart-badge" class="cart-badge">0</span>
+                    </span>
+                </li>
+                <li><a href="#" class="user-link"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </nav>
+        <ul class="categories">
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Children</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Electronics</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <img class="main-img" src="https://i.gifer.com/18RW.gif" alt="">
+        <div class="additional">
+            <p class="main-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic minus expedita eveniet impedit? Voluptates expedita soluta nulla asperiores voluptate totam beatae esse consequuntur, fuga illo, laborum quas eligendi aut amet!</p>
+            <button class="buy" onclick="document.querySelector('.products').scrollIntoView({behavior:'smooth'})">Buy All</button>
+            <div class="search-wrap">
+                <input class="search" type="search" placeholder="Search here....">
+                <i class="fa-solid fa-magnifying-glass search-btn"></i>
+            </div>
+        </div>
+    </main>
+
+    <section class="products">
+        <h1 class="prod-head">Featured Products</h1>
+        <div class="product">
+            <!-- Replaced by JS on load — fallback cards shown while loading -->
+            <div>
+                <img class="prod-img" src="https://hips.hearstapps.com/hmg-prod/images/1-coolest-sneakers-2023-index-comp-1674143020.jpg?resize=1200:*" alt="">
+                <div><p>Lorem ipsum dolor sit</p><div class="prod-actions"><span>$ 40</span></div></div>
+            </div>
+            <div>
+                <img class="prod-img" src="https://hips.hearstapps.com/hmg-prod/images/1-coolest-sneakers-2023-index-comp-1674143020.jpg?resize=1200:*" alt="">
+                <div><p>Lorem ipsum dolor sit</p><div class="prod-actions"><span>$ 40</span></div></div>
+            </div>
+            <div>
+                <img class="prod-img" src="https://hips.hearstapps.com/hmg-prod/images/1-coolest-sneakers-2023-index-comp-1674143020.jpg?resize=1200:*" alt="">
+                <div><p>Lorem ipsum dolor sit</p><div class="prod-actions"><span>$ 40</span></div></div>
+            </div>
+            <div>
+                <img class="prod-img" src="https://hips.hearstapps.com/hmg-prod/images/1-coolest-sneakers-2023-index-comp-1674143020.jpg?resize=1200:*" alt="">
+                <div><p>Lorem ipsum dolor sit</p><div class="prod-actions"><span>$ 40</span></div></div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="contact" id="contact">
+        <h1 class="cont-head">Contact Us</h1>
+        <div class="contact-inner">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor a possimus, voluptatum facere, accusamus similique non mollitia accusantium officia reprehenderit cum. Aliquam architecto hic culpa quia consectetur nihil rem, voluptates consequatur eligendi enim quaerat tempora sint blanditiis ducimus reprehenderit laborum delectus eum error magnam molestiae autem earum? Eveniet fuga labore repellat distinctio ducimus, explicabo molestias sunt, architecto aspernatur molestiae cum aut in quo reprehenderit facilis voluptate accusamus. Recusandae nostrum odio repellendus vero expedita dolore, explicabo ad tempore esse velit facilis? Vitae sint pariatur iure accusantium esse aliquid eum vel eaque repellat quas, harum libero rem nostrum animi similique minus distinctio.</p>
+            <div class="form">
+                <div class="form-field">
+                    <label for="c-name">Name :</label>
+                    <input type="text" id="c-name" placeholder="Enter Your Name">
+                </div>
+                <div class="form-field">
+                    <label for="c-email">Email :</label>
+                    <input type="email" id="c-email" placeholder="Enter Your Email">
+                </div>
+                <label for="c-msg">Feedback :</label>
+                <textarea id="c-msg" name="Feedback" rows="5">Enter your Feedback here...</textarea>
+                <button class="form-btn" type="button">Submit</button>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <footer class="footer">
+        <ul class="links">
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Warranty</a></li>
+            <li><a href="#">FAQ's</a></li>
+            <li><a href="#">Track Your Order</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <div class="icons">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        </div>
+    </footer>
+
+    <script src="Main.js"></script>
+</body>
+</html>
