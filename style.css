@@ -525,60 +525,6 @@ body {
   font-size: 20px;
   cursor: pointer;
 }
-/* Quick View Modal styling */
-.modal-content {
-  border-radius: 16px;
-  border: none;
-  overflow: hidden;
-}
-
-.modal-header {
-  background-color: #FBEAF0;
-  border-bottom: none;
-  padding: 16px 20px;
-}
-
-.modal-title {
-  color: #72243E;
-  font-weight: 600;
-  font-size: 18px;
-}
-
-.modal-body {
-  padding: 20px;
-}
-
-.modal-body img {
-  border-radius: 10px;
-  margin-bottom: 14px;
-  width: 100%;
-  object-fit: cover;
-  max-height: 280px;
-}
-
-.modal-body p {
-  color: #555;
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-.btn-close {
-  background-color: transparent;
-}
-
-.btn-pink {
-  background-color: #D4537E;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 6px 16px;
-  font-size: 13px;
-}
-
-.btn-pink:hover {
-  background-color: #B83D67;
-  color: white;
-}
 /* FAQ Accordion */
 .faq-section {
   padding: 60px 20px;
