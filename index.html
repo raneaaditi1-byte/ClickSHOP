@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>clickSHOP </title>
+    <title>clickSHOP</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
           integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    
 </head>
 <body>
 
@@ -56,26 +58,26 @@
             </div>
         </div>
     </main>
-
     <section class="products">
         <h1 class="prod-head">Featured Products</h1>
         <div class="product">
+            
             <!-- Replaced by JS on load — fallback cards shown while loading -->
             <div>
                 <img class="prod-img" src="https://hips.hearstapps.com/hmg-prod/images/1-coolest-sneakers-2023-index-comp-1674143020.jpg?resize=1200:*" alt="">
-                <div><p>Running Sneakers</p><div class="prod-actions"><span>$ 40</span></div></div>
+                <div><p>Lorem ipsum dolor sit</p><div class="prod-actions"><span>$ 40</span></div></div>
             </div>
             <div>
                 <img class="prod-img" src="https://hips.hearstapps.com/hmg-prod/images/1-coolest-sneakers-2023-index-comp-1674143020.jpg?resize=1200:*" alt="">
-                <div><p>Casual Shoes</p><div class="prod-actions"><span>$ 40</span></div></div>
+                <div><p>Lorem ipsum dolor sit</p><div class="prod-actions"><span>$ 40</span></div></div>
             </div>
             <div>
                 <img class="prod-img" src="https://hips.hearstapps.com/hmg-prod/images/1-coolest-sneakers-2023-index-comp-1674143020.jpg?resize=1200:*" alt="">
-                <div><p>Sports Shoes</p><div class="prod-actions"><span>$ 40</span></div></div>
+                <div><p>Lorem ipsum dolor sit</p><div class="prod-actions"><span>$ 40</span></div></div>
             </div>
             <div>
                 <img class="prod-img" src="https://hips.hearstapps.com/hmg-prod/images/1-coolest-sneakers-2023-index-comp-1674143020.jpg?resize=1200:*" alt="">
-                <div><p>Daily Wear</p><div class="prod-actions"><span>$ 40</span></div></div>
+                <div><p>Lorem ipsum dolor sit</p><div class="prod-actions"><span>$ 40</span></div></div>
             </div>
         </div>
     </section>
@@ -101,8 +103,82 @@
             </div>
         </div>
     </section>
-
+    <button class="scrollBtn" id="scrollBtn" title="Go to top">↑</button>
     <hr>
+    <!-- FAQ Accordion -->
+<section class="faq-section">
+  <div class="container">
+    <h2 class="faq-title">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+            What is your return policy?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            We offer a 30-day return policy on all products. Items must be unused and in original packaging. Contact our support team to initiate a return.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+            How long does delivery take?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Standard delivery takes 3-5 business days. Express delivery is available at checkout for next-day delivery within Mumbai.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+            What payment methods do you accept?
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            We accept all major credit/debit cards, UPI, net banking and cash on delivery across India.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+            How do I track my order?
+          </button>
+        </h2>
+        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Once your order is shipped you will receive a tracking link via email and SMS. You can also track your order from the Track Your Order section in our website.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+            Do you offer warranty on products?
+          </button>
+        </h2>
+        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes! All electronics and accessories come with a minimum 6-month warranty. Some products carry a manufacturer warranty of up to 2 years.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
     <footer class="footer">
         <ul class="links">
@@ -119,8 +195,13 @@
             <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
         </div>
+        
     </footer>
 
-    <script src="Main.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="script.js"></script>
 </body>
+
 </html>
